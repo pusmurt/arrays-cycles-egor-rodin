@@ -8,7 +8,17 @@ public class Task6 {
         int [][] Array6 = new int[3][3];
 
         System.out.println("Задача #6");
-        System.out.println("Массив до изменений: " + Arrays.deepToString(Array6));
+
+        System.out.println("Массив до изменения данных: ");
+
+        for (int i = 0; i < Array6.length; i++) {
+            for (int j = 0; j < Array6.length; j++) {
+                System.out.print("[" + Array6[j][i] + "]");
+                if (j == 2) {
+                    System.out.println(" ");
+                }
+                }
+            }
 
             for (int i = 0; i < Array6.length; i++) {
                 for (int j = 0; j < Array6.length; j++) {
@@ -16,8 +26,15 @@ public class Task6 {
                 } else Array6 [i][j] = 1;
             }
         }
+            System.out.println("Массив после изменения данных: ");
 
-        System.out.println("После внесения изменений: " + Arrays.deepToString(Array6));
-
+        for (int i = 0; i < Array6.length; i++) {
+            for (int j = 0; j < Array6.length; j++) {
+                System.out.print("[" + Array6[j][i] + "]");
+                if (j == 2) {
+                    System.out.println(" ");
+                }
+            }
+        }
     }
 }
